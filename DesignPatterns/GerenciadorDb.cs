@@ -5,16 +5,13 @@ namespace DesignPatterns
     {
         private static GerenciadorDb _gerenciadorDb = null;
 
-        private GerenciadorDb()
-        {
-        }
+        private GerenciadorDb() { }
 
         public static GerenciadorDb GetInstance()
         {
             if(_gerenciadorDb == null)
             {
                 _gerenciadorDb = new GerenciadorDb();
-                return _gerenciadorDb;
             }
 
             return _gerenciadorDb;
@@ -23,3 +20,5 @@ namespace DesignPatterns
         public string Propriedade { get; set; } = "String Padrão";
     }
 }
+
+

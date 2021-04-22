@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Runtime.InteropServices;
 
 namespace DesignPatterns
 {
@@ -7,20 +6,17 @@ namespace DesignPatterns
     {
         static void Main(string[] args)
         {
-            var gerenciador1 = GerenciadorDb.GetInstance();
-
-            Console.WriteLine("gerenciador1: " + gerenciador1.Propriedade);
-
-            Console.WriteLine("------------------------------------------------------");
-
+            GerenciadorDb gerenciador1 = GerenciadorDb.GetInstance();
             GerenciadorDb gerenciador2 = GerenciadorDb.GetInstance();
-            Console.WriteLine("Modificação da propriedade pelo gerenciador2");
 
-            gerenciador2.Propriedade = "Nova string - modificação pelo gerenciador2";
-            
-            Console.WriteLine("gerenciador1: " + gerenciador1.Propriedade);
-
-            Console.WriteLine("\n\nConclusão: Sempre está sendo fornecida a mesma instância de memória da classe GerenciadorDb");
+            if(gerenciador1 == gerenciador2)
+            {
+                Console.WriteLine("Está sendo retornado sempre a mesma referência do objeto GerenciadorDb - Singleton é real");
+            }
+            else
+            {
+                Console.WriteLine("Está sendo retornado referências diferentes do objeto GerenciadorDb - Singleton é Fake News");
+            }
         }
     }
 }
