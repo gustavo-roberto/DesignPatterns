@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30002.166
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Singleton", "DesignPatterns\Singleton.csproj", "{F0DCF87C-B68C-436A-A972-552B0C97D12D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monostate", "Monostate\Monostate.csproj", "{65223AB3-682B-49B0-BDD4-3C2BAA5027D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Monostate", "Monostate\Monostate.csproj", "{65223AB3-682B-49B0-BDD4-3C2BAA5027D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
