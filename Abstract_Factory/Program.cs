@@ -6,7 +6,7 @@ namespace Abstract_Factory
     {
         static void Main(string[] args)
         {
-            
+                        
         }
     }
 }

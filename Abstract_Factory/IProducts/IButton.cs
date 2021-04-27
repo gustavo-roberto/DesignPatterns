@@ -2,6 +2,6 @@
 {
     public interface IButton
     {
-        void paint(); 
+        void Paint(); 
     }
 }

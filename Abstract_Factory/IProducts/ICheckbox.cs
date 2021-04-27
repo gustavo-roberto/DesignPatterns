@@ -2,6 +2,6 @@
 {
     public interface ICheckbox
     {
-        void paint();
+        void Paint();
     }
 }

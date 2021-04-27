@@ -5,7 +5,7 @@ namespace Abstract_Factory.Products.Windows
 {
     public class WinCheckbox : ICheckbox
     {
-        public void paint()
+        public void Paint()
         {
             Console.WriteLine("Reinderiza um checkbox segundo o padrão Windows");
         }

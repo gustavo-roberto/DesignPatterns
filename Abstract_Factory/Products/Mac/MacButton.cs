@@ -5,7 +5,7 @@ namespace Abstract_Factory.Products.Mac
 {
     public class MacButton : IButton
     {
-        public void paint()
+        public void Paint()
         {
             Console.WriteLine("Reinderiza um botão segundo o padrão MacOS");
         }

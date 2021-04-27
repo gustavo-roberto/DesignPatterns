@@ -4,7 +4,7 @@ namespace Abstract_Factory.IFactorys
 {
     public interface IFactory
     {
-        IButton crateButton();
-        ICheckbox createCheckbox();
+        IButton CreateButton();
+        ICheckbox CreateCheckbox();
     }
 }

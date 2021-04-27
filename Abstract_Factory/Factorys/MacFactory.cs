@@ -1,19 +1,19 @@
 ﻿using Abstract_Factory.IFactorys;
 using Abstract_Factory.IProducts;
-using Abstract_Factory.Products.Windows;
+using Abstract_Factory.Products.Mac;
 
 namespace Abstract_Factory.Factorys
 {
-    public class WinFactory : IFactory
+    public class MacFactory : IFactory
     {
         public IButton CreateButton()
         {
-            return new WinButton();
+            return new MacButton();
         }
 
         public ICheckbox CreateCheckbox()
         {
-            return new WinCheckbox();
+            return new MacCheckbox();
         }
     }
 }
