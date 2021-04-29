@@ -11,10 +11,6 @@ namespace Abstract_Factory
         public Client(IFactory factory)
         {
             _factory = factory;
-        }
-
-        public void CreateUI()
-        {
             _button = _factory.CreateButton();
             _checkbox = _factory.CreateCheckbox();
         }
